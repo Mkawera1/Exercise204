@@ -12,7 +12,7 @@ import javax.validation.Valid;
 public class HomeController {
     @GetMapping("/carform")
     public String loadCarform(Model model){
-        model.addAttribute("carshow", new Car());
+        model.addAttribute("car", new Car());
         return "carform";
     }
 
